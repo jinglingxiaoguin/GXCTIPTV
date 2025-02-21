@@ -6,7 +6,7 @@ import datetime
 def timestamp():
     return datetime.datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
 
-# 服务器地址，机顶盒抓包后在Wireshark中http流找到机顶盒抓包后在Wireshark中http流找到 /EPG/jsp/ValidAuthenticationHWCTC.jsp 这个请求，找到Destination IP和端口
+# 服务器地址，机顶盒抓包后在Wireshark中http流找到 /EPG/jsp/ValidAuthenticationHWCTC.jsp 这个请求，找到Destination IP和端口
 BASE_URL = "http://xxx.xxx.xxx.xxx:xxxxx/EPG/jsp"
 
 # 认证请求参数：在 “HTML Form URL Encoded” 上单击右键选择 复制 - As Printable Text，会获得‘UserID=02012345678&Lang=&SupportHD=1&NetUserID=02012345678%40iptv.gd&DHCPUserID=02012345678%40iptv.gd&Authenticator=[HEX DUMP]&STBType=...&STBVersion=...&conntype=2&STBID=...&templateName=iptvsnmv3&areaId=&userToken=...&userGroupId=...&productPackageId=&mac=...&UserField=&SoftwareVersion=&IsSmartStb=0&desktopId=1&stbmaker=&VIP=’
